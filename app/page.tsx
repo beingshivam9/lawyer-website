@@ -181,7 +181,7 @@ With a focus on practical solutions, client satisfaction, and professional excel
 </a>
 
     <a
-  href="mailto:lawyer@email.com"
+  href="mailto:avinashovhal89@gmail.com"
   className="flex items-center bg-white p-4 rounded-lg shadow-sm border hover:scale-[1.02] transition"
 >
   <Mail className="text-yellow-500 mr-3" />

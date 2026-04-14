@@ -16,7 +16,7 @@ export default function ContactPage() {
   formData.append("email", email)
   formData.append("message", message)
 
-  await fetch("https://formsubmit.co/ajax/avinashovhal89@gmail.com", {
+  await fetch("https://formsubmit.co/avinashovhal89@gmail.com", {
     method: "POST",
     body: formData,
   })
@@ -52,7 +52,7 @@ export default function ContactPage() {
 </a>
 
          <a
-  href="mailto:lawyer@email.com"
+  href="mailto:avinashovhal89@gmail.com"
   className="flex items-center bg-white p-4 rounded-lg shadow-sm border hover:scale-[1.02] transition"
 >
   <Mail className="text-yellow-500 mr-3" />
