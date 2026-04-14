@@ -10,7 +10,7 @@ export default function ConsultationPopup({ open, setOpen }: any) {
 
     const formData = new FormData(e.target)
 
-    await fetch("https://formsubmit.co/ajax/shiiivam196@gmail.com", {
+    await fetch("https://formsubmit.co/ajax/avinashovhal89@gmail.com", {
       method: "POST",
       body: formData,
     })

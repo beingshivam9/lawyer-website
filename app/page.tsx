@@ -187,7 +187,7 @@ With a focus on practical solutions, client satisfaction, and professional excel
   <Mail className="text-yellow-500 mr-3" />
   <div>
     <p className="text-sm font-semibold text-black">Email</p>
-    <p className="text-xs text-black">lawyer@email.com</p>
+    <p className="text-xs text-black">avinashovhal89@gmail.com</p>
   </div>
 </a>
 
@@ -200,7 +200,7 @@ With a focus on practical solutions, client satisfaction, and professional excel
   <MapPin className="text-yellow-500 mr-3" />
   <div>
     <p className="text-sm font-semibold text-black">Location</p>
-    <p className="text-xs text-black">Mumbai, India</p>
+    <p className="text-xs text-black">Navi Mumbai, India</p>
   </div>
 </a>
 

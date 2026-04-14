@@ -16,7 +16,7 @@ export default function ContactPage() {
   formData.append("email", email)
   formData.append("message", message)
 
-  await fetch("https://formsubmit.co/ajax/shiiivam196@gmail.com", {
+  await fetch("https://formsubmit.co/ajax/avinashovhal89@gmail.com", {
     method: "POST",
     body: formData,
   })
@@ -58,7 +58,7 @@ export default function ContactPage() {
   <Mail className="text-yellow-500 mr-3" />
   <div>
     <p className="text-sm font-semibold text-black">Email</p>
-    <p className="text-xs text-black">lawyer@email.com</p>
+    <p className="text-xs text-black">avinashovhal89@gmail.com</p>
   </div>
 </a>
 
@@ -72,7 +72,7 @@ export default function ContactPage() {
   <MapPin className="text-yellow-500 mr-3" />
   <div>
     <p className="text-sm font-semibold text-black">Location</p>
-    <p className="text-xs text-black">Mumbai, India</p>
+    <p className="text-xs text-black">Navi Mumbai, India</p>
   </div>
 </a>
 
