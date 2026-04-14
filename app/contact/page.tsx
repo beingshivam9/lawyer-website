@@ -8,15 +8,26 @@ export default function ContactPage() {
   const [email, setEmail] = useState("")
   const [message, setMessage] = useState("")
 
-  const handleSubmit = (e: any) => {
-    e.preventDefault()
+  const handleSubmit = async (e: any) => {
+  e.preventDefault()
 
-    const text = `Hello, my name is ${name}. Email: ${email}. Message: ${message}`
+  const formData = new FormData()
+  formData.append("name", name)
+  formData.append("email", email)
+  formData.append("message", message)
 
-    const url = `https://wa.me/918692003685?text=${encodeURIComponent(text)}`
+  await fetch("https://formsubmit.co/ajax/shiiivam196@gmail.com", {
+    method: "POST",
+    body: formData,
+  })
 
-    window.open(url, "_blank")
-  }
+  alert("Message sent successfully ✅")
+
+  // clear form
+  setName("")
+  setEmail("")
+  setMessage("")
+}
 
   return (
     <main className="bg-[#F5F5F5] min-h-screen pb-20">
@@ -29,40 +40,52 @@ export default function ContactPage() {
       {/* INFO */}
       <div className="px-4 mt-6 space-y-4">
 
-        <div className="flex items-center bg-white p-4 rounded-lg shadow-sm border">
-          <Phone className="text-yellow-500 mr-3" />
-          <div>
-            <p className="text-sm font-semibold text-black">Call Us</p>
-            <p className="text-xs text-black">+91 86920 03685</p>
-          </div>
-        </div>
+       <a
+  href="tel:+918692003685"
+  className="flex items-center bg-white p-4 rounded-lg shadow-sm border hover:scale-[1.02] transition"
+>
+  <Phone className="text-yellow-500 mr-3" />
+  <div>
+    <p className="text-sm font-semibold text-black">Call Us</p>
+    <p className="text-xs text-black">+91 86920 03685</p>
+  </div>
+</a>
 
-        <div className="flex items-center bg-white p-4 rounded-lg shadow-sm border">
-          <Mail className="text-yellow-500 mr-3" />
-          <div>
-            <p className="text-sm font-semibold text-black">Email</p>
-            <p className="text-xs text-black">lawyer@email.com</p>
-          </div>
-        </div>
+         <a
+  href="mailto:lawyer@email.com"
+  className="flex items-center bg-white p-4 rounded-lg shadow-sm border hover:scale-[1.02] transition"
+>
+  <Mail className="text-yellow-500 mr-3" />
+  <div>
+    <p className="text-sm font-semibold text-black">Email</p>
+    <p className="text-xs text-black">lawyer@email.com</p>
+  </div>
+</a>
 
-        <div className="flex items-center bg-white p-4 rounded-lg shadow-sm border">
-          <MapPin className="text-yellow-500 mr-3" />
-          <div>
-            <p className="text-sm font-semibold text-black">Location</p>
-            <p className="text-xs text-black">Mumbai, India</p>
-          </div>
-        </div>
+
+        <a
+  href="https://maps.app.goo.gl/b8BwobuxAW8hWrww5"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center bg-white p-4 rounded-lg shadow-sm border hover:scale-[1.02] transition"
+>
+  <MapPin className="text-yellow-500 mr-3" />
+  <div>
+    <p className="text-sm font-semibold text-black">Location</p>
+    <p className="text-xs text-black">Mumbai, India</p>
+  </div>
+</a>
 
       </div>
 
       {/* GOOGLE MAP */}
-      <div className="px-4 mt-6">
-        <iframe
-          src="https://www.google.com/maps?q=Mumbai%20High%20Court&output=embed"
-          className="w-full h-60 rounded-lg border"
-          loading="lazy"
-        ></iframe>
-      </div>
+       <div className="mt-6">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.7048633405966!2d73.01430357384415!3d19.03272258216294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c3919599f0bf%3A0xe9ec685b1be20252!2sJoyous%20cafe!5e0!3m2!1sen!2sin!4v1776166424645!5m2!1sen!2sin"
+      className="w-full h-60 rounded-lg border"
+      loading="lazy"
+    ></iframe>
+  </div>
 
       {/* FORM */}
       <div className="px-4 mt-6">

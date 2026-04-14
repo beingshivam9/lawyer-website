@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Home as HomeIcon, Scale, Briefcase, Phone } from "lucide-react"
+import { Home as HomeIcon, Scale, Phone } from "lucide-react"
 
 export default function BottomNav() {
   const pathname = usePathname()
@@ -28,7 +28,6 @@ export default function BottomNav() {
 
       {navItem("/", <HomeIcon size={20} />, "Home")}
       {navItem("/services", <Scale size={20} />, "Services")}
-      {navItem("/cases", <Briefcase size={20} />, "Cases")}
       {navItem("/contact", <Phone size={20} />, "Contact")}
 
     </div>

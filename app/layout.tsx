@@ -1,3 +1,4 @@
+import WhatsappFloat from "@/components/WhatsappFloat"
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
@@ -39,11 +40,23 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable}`}
     >
-      <body className={`${inter.className} min-h-screen`}>
+      {/* ✅ Added padding bottom so footer + navbar don’t overlap */}
+      <body className={`${inter.className} min-h-screen pb-20`}>
+
         {children}
+
+        {/* ✅ FOOTER CREDIT */}
+        <footer className="bg-[#0B1C2C] text-center text-[11px] text-gray-400 py-3">
+          © {new Date().getFullYear()}{" "}
+          <a href="https://plasma-studios.web.app/" className="text-yellow-400">
+  Plasma Studios Pvt Ltd
+</a>. All rights reserved.
+        </footer>
 
         {/* ✅ GLOBAL NAVBAR */}
         <BottomNav />
+<WhatsappFloat />
+
       </body>
     </html>
   );
