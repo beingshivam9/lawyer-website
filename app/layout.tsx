@@ -24,10 +24,13 @@ const inter = Inter({
 });
 
 /* META */
-export const metadata: Metadata = {
-  title: "Lawyer Portfolio",
-  description: "Professional Lawyer Website",
-};
+export const metadata = {
+  title: "Adv. Avinash S. Ovhal & Associates",
+  description: "Professional legal services with 15+ years of experience.",
+  icons: {
+    icon: "/favicon.ico",
+  },
+}
 
 /* LAYOUT */
 export default function RootLayout({
@@ -55,7 +58,7 @@ export default function RootLayout({
 
         {/* ✅ GLOBAL NAVBAR */}
         <BottomNav />
-<WhatsappFloat />
+
 
       </body>
     </html>

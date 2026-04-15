@@ -181,13 +181,14 @@ With a focus on practical solutions, client satisfaction, and professional excel
 </a>
 
     <a
-  href="mailto:avinashovhal89@gmail.com"
+  href="mailto:advavinashovhalandassociates@gmail.com"
   className="flex items-center bg-white p-4 rounded-lg shadow-sm border hover:scale-[1.02] transition"
 >
   <Mail className="text-yellow-500 mr-3" />
   <div>
     <p className="text-sm font-semibold text-black">Email</p>
     <p className="text-xs text-black">avinashovhal89@gmail.com</p>
+<p className="text-xs text-black">advavinashovhalandassociates@gmail.com</p>
   </div>
 </a>
 
@@ -200,7 +201,7 @@ With a focus on practical solutions, client satisfaction, and professional excel
   <MapPin className="text-yellow-500 mr-3" />
   <div>
     <p className="text-sm font-semibold text-black">Location</p>
-    <p className="text-xs text-black">Navi Mumbai, India</p>
+    <p className="text-xs text-black">Shop No. C-20, First Floor, Amrita Sadan CHS., Plot No. 13 & 14, Sector-20, Opp. Nerul Railway Station, Nerul (West), Navi Mumbai 400 706.</p>
   </div>
 </a>
 
