@@ -24,13 +24,13 @@ const inter = Inter({
 });
 
 /* META */
-export const metadata = {
+export const metadata: Metadata = {
   title: "Adv. Avinash S. Ovhal & Associates",
   description: "Professional legal services with 15+ years of experience.",
   icons: {
     icon: "/favicon.ico",
   },
-}
+};
 
 /* LAYOUT */
 export default function RootLayout({
@@ -43,22 +43,29 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable}`}
     >
-      {/* ✅ Added padding bottom so footer + navbar don’t overlap */}
       <body className={`${inter.className} min-h-screen pb-20`}>
 
+        {/* PAGE CONTENT */}
         {children}
 
-        {/* ✅ FOOTER CREDIT */}
+        {/* ✅ WHATSAPP FLOAT BUTTON */}
+        <WhatsappFloat />
+
+        {/* ✅ FOOTER */}
         <footer className="bg-[#0B1C2C] text-center text-[11px] text-gray-400 py-3">
           © {new Date().getFullYear()}{" "}
-          <a href="https://plasma-studios.web.app/" className="text-yellow-400">
-  Plasma Studios Pvt Ltd
-</a>. All rights reserved.
+          <a
+            href="https://plasma-studios.web.app/"
+            className="text-yellow-400"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Plasma Studios Pvt Ltd
+          </a>. All rights reserved.
         </footer>
 
-        {/* ✅ GLOBAL NAVBAR */}
+        {/* ✅ BOTTOM NAVBAR */}
         <BottomNav />
-
 
       </body>
     </html>
