@@ -56,10 +56,10 @@ export default async function Home() {
           className="w-full h-full object-contain md:object-cover"
         />
 
-        <div className="absolute inset-0 bg-black/30"></div>
+        <div className="absolute inset-0 bg-black/2"></div>
 
-        <div className="absolute inset-0 flex items-center justify-center text-center z-10 text-white">
-          <div className="w-full md:w-1/2 translate-x-6 md:translate-x-0">
+       <div className="absolute inset-0 flex items-center justify-center md:items-center items-end pt-10 md:pb-0 text-center z-10 text-white">
+          <div className="w-full md:w-1/2 translate-x-6 md:translate-x-0 flex flex-col justify-center h-full">
 <AnimatedSection>
             <h2
               className="text-xl md:text-3xl text-white tracking-wide mt-6"
@@ -76,11 +76,7 @@ export default async function Home() {
               {lawyer?.experience}
             </p>
 
-           <ConsultButton>
-  <button className="mt-4 inline-block bg-gradient-to-r from-yellow-400 to-yellow-600 px-6 py-2 rounded text-black font-semibold shadow-lg">
-    Book a Consultation
-  </button>
-</ConsultButton>
+           
 
           </div>
         </div>
@@ -89,6 +85,12 @@ export default async function Home() {
 
       {/* WHITE SECTION */}
       <div className="bg-[#F5F5F5] pt-6">
+<div className="flex justify-center mt-4 mb-8 relative z-20">  <ConsultButton>
+    <button className="bg-gradient-to-r from-yellow-400 to-yellow-600 px-6 py-2 rounded-full text-black font-semibold shadow-lg hover:scale-105 transition">
+      Book a Consultation
+    </button>
+  </ConsultButton>
+</div>
 <AnimatedSection>
 
         {/* CARDS */}
