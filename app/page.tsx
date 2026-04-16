@@ -59,7 +59,7 @@ export default async function Home() {
         <div className="absolute inset-0 bg-black/2"></div>
 
        <div className="absolute inset-0 flex items-center justify-center md:items-center items-end pt-10 md:pb-0 text-center z-10 text-white">
-          <div className="w-full md:w-1/2 translate-x-6 md:translate-x-0 flex flex-col justify-center h-full">
+         <div className="w-full md:w-1/2 translate-x-6 md:translate-x-0 flex flex-col justify-center h-full relative items-end md:items-center text-right md:text-center pr-17 md:pr-0">
 <AnimatedSection>
             <h2
               className="text-xl md:text-3xl text-white tracking-wide mt-6"
