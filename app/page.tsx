@@ -38,10 +38,15 @@ export default async function Home() {
       <div className="absolute top-3 left-1/2 -translate-x-1/2 z-30 text-center">
         <div className="w-12 h-[2px] bg-gradient-to-r from-yellow-400 to-yellow-600 mx-auto mb-1 rounded-full"></div>
 
-        <h1 className="text-lg md:text-xl text-white leading-tight tracking-wide whitespace-nowrap overflow-hidden text-ellipsis"
-          style={{ fontFamily: 'Playfair Display, serif' }}>
-          Adv Avinash S Ovhal & Associates
-        </h1>
+       <h1
+  className="text-xl md:text-3xl lg:text-4xl text-white font-semibold tracking-wide whitespace-nowrap"
+  style={{
+    fontFamily: 'Playfair Display, serif',
+    textShadow: '0 4px 20px rgba(0,0,0,0.6)'
+  }}
+>
+  Adv Avinash S Ovhal & Associates
+</h1>
 
         <p className="text-[10px] md:text-xs text-gray-300 tracking-wider mt-0.5">
           EXPERIENCED ATTORNEY
@@ -68,7 +73,7 @@ export default async function Home() {
                 textShadow: '0 2px 10px rgba(0,0,0,0.6)'
               }}
             >
-              Trusted Legal Expertise
+              
             </h2>
 </AnimatedSection>
 
