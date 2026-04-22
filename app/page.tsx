@@ -177,13 +177,13 @@ With a focus on practical solutions, client satisfaction, and professional excel
   <div className="mt-4 space-y-3">
 
    <a
-  href="tel:+918692003685"
+  href="tel:+919372527687"
   className="flex items-center bg-white p-4 rounded-lg shadow-sm border hover:scale-[1.02] transition"
 >
   <Phone className="text-yellow-500 mr-3" />
   <div>
     <p className="text-sm font-semibold text-black">Call Us</p>
-    <p className="text-xs text-black">+91 86920 03685</p>
+    <p className="text-xs text-black">+91 93725 27687</p>
   </div>
 </a>
 

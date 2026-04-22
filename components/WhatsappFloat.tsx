@@ -1,7 +1,7 @@
 "use client"
 
 export default function WhatsappFloat() {
-  const phone = "918692003685" // change if needed
+  const phone = "919372527687" // change if needed
 
   return (
     <a
